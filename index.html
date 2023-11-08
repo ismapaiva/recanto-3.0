@@ -165,7 +165,7 @@
 
 		<!-- Menu -->
 		<ul class="menu">
-			<li>&copy; Recanto dos Pinheiros</li>
+			<li>&copy; Recanto dos Pinheiros <span id="anoAtual"></span> </li>
 		</ul>
 
 	</footer>
@@ -179,6 +179,13 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		// ANO ATUAL - FOOTER
+        var elementoAnoAtual = document.getElementById("anoAtual");
+        // Obtém o ano atual
+        var ano = new Date().getFullYear();
+        elementoAnoAtual.textContent = ano;
+	</script>
 
 </body>
 
