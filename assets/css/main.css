@@ -7,6 +7,15 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root{
+    --cor-verde1: #627656;
+    --cor-verde2: #9eb690;
+    --cor-cinza: #454545;
+    --cor-cinza2: #2b2b2b;
+    --fonte-principal: "Poppins";
+    --branco: #ffffff;
+}
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -564,6 +573,7 @@ input, select, textarea {
 		font-size: 2.25em;
 		line-height: 1.25em;
 		letter-spacing: -0.05em;
+		color: var( --cor-verde1);
 	}
 
 	@media screen and (max-width: 736px) {
@@ -573,10 +583,12 @@ input, select, textarea {
 		}
 
 	}
-
+	.first-strong{
+		color: white;
+	}
 	strong, b {
 		font-weight: 900;
-		color: inherit;
+		color: var( --cor-verde1);
 	}
 
 	em, i {
@@ -1825,7 +1837,9 @@ input, select, textarea {
 		}
 
 /* Header */
-
+	.first-title{
+		color: white;
+	}
 	#header {
 		position: fixed;
 		z-index: 10000;
@@ -1845,6 +1859,7 @@ input, select, textarea {
 			height: 3em;
 			line-height: 3em;
 			cursor: default;
+			color: var( --cor-verde1);
 		}
 
 			#header h1 a {
@@ -1877,6 +1892,10 @@ input, select, textarea {
 						line-height: 3em;
 						padding: 0 0.5em 0 0.5em;
 						outline: 0;
+					}
+					#header nav ul li a:hover{
+						transition: transform 0.3s;
+						transform: scale(1.2);
 					}
 
 		@media screen and (max-width: 736px) {
@@ -2241,20 +2260,20 @@ input, select, textarea {
 
 		}
 
-/* Intro */
+/* ___P R I M E I R A  D O B R A___ Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background: url("images/overlay.png"), url("../../images/piscina1.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
-		background-position: top left, bottom center;
+		background-position:  center;
 		background-repeat: repeat, no-repeat;
 	}
 
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background: url("images/overlay.png"), url("../../images/piscina2.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2263,20 +2282,20 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background: url("images/overlay.png"), url("../../images/casaLateral.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
 
-/* Contact */
+/* localizacao - */
 
-	#contact {
+	#localizacao {
 		overflow: hidden;
 		padding-bottom: 0;
 	}
 
-		#contact .box {
+		#localizacao .box {
 			-moz-transition: -moz-transform 1s ease;
 			-webkit-transition: -webkit-transform 1s ease;
 			-ms-transition: -ms-transform 1s ease;
@@ -2288,16 +2307,25 @@ input, select, textarea {
 			position: relative;
 		}
 
-		#contact.inactive .box {
+		#localizacao.inactive .box {
 			-moz-transform: translateY(100%);
 			-webkit-transform: translateY(100%);
 			-ms-transform: translateY(100%);
 			transform: translateY(100%);
 		}
+		/*  ___B O T Ã O  W H A T S___  */
+		.whatsApp a img{
+			height: 10rem;
+			margin-bottom: 3rem;
+		}
+		.whatsApp a img:hover{
+			transition: transform 0.5s;
+			transform: scale(1.2);
+		}
 
 		@media screen and (max-width: 736px) {
 
-			#contact .box {
+			#localizacao .box {
 				padding: 1.5em 1.5em 2em 1.5em;
 			}
 
@@ -2305,7 +2333,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#contact .box {
+			#localizacao .box {
 				padding: 1em 1em 2em 1em;
 			}
 

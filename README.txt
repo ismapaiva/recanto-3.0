@@ -25,7 +25,7 @@ permission!)
 AJ
 aj@lkn.io | @ajlkn
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+PS: Not sure how to get that localizacao form working? Give formspree.io a try (it's awesome).
 
 
 Instructions:
@@ -110,11 +110,11 @@ Instructions:
 		image to slide into view (in which case it'll simply fade in).
 
 
-	Contact Form:
+	localizacao Form:
 
 		To get this working, place a script on your server to receive the form data, then
 		point the "action" attribute to it (eg. action="http://mydomain.tld/mail.php").
-		More on how it all works here: 1stwebdesigner.com/tutorials/custom-php-contact-forms
+		More on how it all works here: 1stwebdesigner.com/tutorials/custom-php-localizacao-forms
 
 
     Icons:
