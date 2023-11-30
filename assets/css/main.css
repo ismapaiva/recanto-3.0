@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,500,900");
 @import url("fontawesome-all.min.css");
 
 /*
@@ -1442,6 +1442,7 @@ input, select, textarea {
 		width: 45em;
 		max-width: 100%;
 		margin: 0 auto 2em auto;
+		justify-content: space-between;
 	}
 
 		.gallery article {
@@ -1453,9 +1454,10 @@ input, select, textarea {
 			-webkit-transform: translateX(0);
 			-ms-transform: translateX(0);
 			transform: translateX(0);
-			width: 50%;
+			width: 33%;
 			position: relative;
 			opacity: 1.0;
+			margin-bottom: .4rem;
 		}
 
 			.gallery article .image {
@@ -1896,6 +1898,7 @@ input, select, textarea {
 					#header nav ul li a:hover{
 						transition: transform 0.3s;
 						transform: scale(1.2);
+						font-weight: 500;
 					}
 
 		@media screen and (max-width: 736px) {
