@@ -758,6 +758,8 @@ input, select, textarea {
 			.button.style2:hover,
 			button.style2:hover {
 				background-color: rgba(229, 230, 231, 0.25);
+				transition: transform .8s;
+				transform: scale(1.2);
 			}
 
 			input[type="button"].style2:active,
@@ -1183,7 +1185,7 @@ input, select, textarea {
 
 		ul.icons a {
 			display: inline-block;
-			width: 2em;
+			width: 12em;
 			height: 2em;
 			line-height: 2em;
 			text-align: center;
@@ -1456,7 +1458,7 @@ input, select, textarea {
 			transform: translateX(0);
 			width: 33%;
 			position: relative;
-			opacity: 1.0;
+			opacity: 1;
 			margin-bottom: .4rem;
 		}
 
@@ -1896,7 +1898,7 @@ input, select, textarea {
 						outline: 0;
 					}
 					#header nav ul li a:hover{
-						transition: transform 0.3s;
+						transition: transform 0.5s;
 						transform: scale(1.2);
 						font-weight: 500;
 					}
@@ -2149,10 +2151,10 @@ input, select, textarea {
 				.main.style2:before, .main.style2:after {
 					display: none !important;
 				}
-
-				.main.style2 .button.anchored {
+				/* remover o botão 'down' */
+				/* .main.style2 .button.anchored {
 					display: none;
-				}
+				} */
 
 				.main.style2 .content {
 					width: 100%;
@@ -2201,6 +2203,23 @@ input, select, textarea {
 		background: #39454b;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
+	}
+	.voltar-ao-topo{
+		display: none;
+
+	}
+	.menu-footer{
+		display: flex;
+		justify-content: space-between;
+		gap:1rem;
+	}
+	.menu-footer li a{
+		text-decoration: none;
+		border-bottom: .5px solid rgba(185, 186, 187, 0.5);
+		padding-bottom: .3rem;
+	}
+	.menu{
+		width: 12em;
 	}
 
 		#footer > * {
@@ -2338,6 +2357,14 @@ input, select, textarea {
 
 			#localizacao .box {
 				padding: 1em 1em 2em 1em;
+			}
+			.menu-footer{
+				display: none;
+			}
+			.voltar-ao-topo{
+				display: block;
+				font-size: 1.5rem;
+				text-decoration: none;
 			}
 
 		}
