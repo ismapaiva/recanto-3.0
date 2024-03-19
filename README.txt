@@ -1,6 +1,6 @@
-Website developed for a company that rents its space for events and the season.
+Website developed for a Brazilian company that rents its space for events and the season.
 
-Made with HTML5, CSS3, SCSS and JavaScript
+Made with HTML5, CSS3, SCSS and JavaScript.
 
 Big Picture by HTML5 UP
 html5up.net | @ajlkn
